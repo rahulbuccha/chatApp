@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         
     }
     
+    //MARK: Register Button Tapped and Function
     @IBAction func registerTapped(_ sender: UIButton){
        didTapSignUpButton()
     }

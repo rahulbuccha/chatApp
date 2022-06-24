@@ -9,6 +9,7 @@ import FirebaseAuth
 import Foundation
 import UIKit
 class FirebaseAuthManager {
+    //MARK: Firebase Create user function
     func createUser(email: String, password: String, completionBlock: @escaping (_ success: Bool) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) {(authResult, error) in
             if let user = authResult?.user {
@@ -19,16 +20,7 @@ class FirebaseAuthManager {
             }
         }
     }
-    
-//    func signIn(email: String, pass: String, completionBlock: @escaping (_ success: Bool) -> Void) {
-//        Auth.auth().signIn(withEmail: email, password: pass) { (authResult, error) in
-//            if let error = error, let rawValue = AuthErrorCode(rawValue: error.code) {
-//                completionBlock(false)
-//            } else {
-//                completionBlock(true)
-//            }
-//        }
-//    }
+    //MARK: Firebase Sign function
     func signIn(email: String, pass: String, completionBlock: @escaping (_ success: Bool) -> Void) {
         Auth.auth().signIn(withEmail: email, password: pass) { (authResult, error) in
       if let error = error as? NSError {

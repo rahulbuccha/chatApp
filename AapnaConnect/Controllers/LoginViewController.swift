@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
          view.addGestureRecognizer(tapGesture)
     }
     
+    //MARK: Login Button Tapped and Function
     @IBAction func loginTapped(_ sender: Any) {
         didTapLoginButton()
         
