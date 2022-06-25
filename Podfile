@@ -8,7 +8,7 @@ target 'AapnaConnect' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-  pod 'SkyFloatingLabelTextField'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'MessageKit'
   
   pod 'CometChatPro', '3.0.900'

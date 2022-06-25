@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class ViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     //Button Outlets
     @IBOutlet weak var verifyButton: UIButton!
@@ -24,9 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //MARK: Design buttons
-        verifyButton.layer.cornerRadius = verifyButton.frame.size.height / 2
         submitButton.layer.cornerRadius = submitButton.frame.size.height / 2
-        self.verifyButton.setRadiusWithShadow(20.0)
         self.submitButton.setRadiusWithShadow(20.0)
         
         //MARK: Tap gesture for keyboard
@@ -58,3 +56,4 @@ class ViewController: UIViewController {
     }
 
 }
+

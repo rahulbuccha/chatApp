@@ -9,8 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    //Button Outlets
-    @IBOutlet weak var verifyButton: UIButton!
+    // Outlets
     @IBOutlet weak var submitButton: UIButton!
     
     @IBOutlet weak var emailOutlet: UITextField!
@@ -20,9 +19,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // design buttons
-        verifyButton.layer.cornerRadius = verifyButton.frame.size.height / 2
         submitButton.layer.cornerRadius = submitButton.frame.size.height / 2
-        self.verifyButton.setRadiusWithShadow(20.0)
         self.submitButton.setRadiusWithShadow(20.0)
         
         //MARK: Tap gesture for keyboard
