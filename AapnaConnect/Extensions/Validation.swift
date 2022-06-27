@@ -4,7 +4,6 @@
 //
 //  Created by Admin on 25/06/22.
 //
-
 import Foundation
 extension String{
     func validateEmailId() -> Bool {

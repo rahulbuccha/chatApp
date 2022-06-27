@@ -13,11 +13,16 @@
 		846917F82861E8B300F1D01A /* PhoneNumeberAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846917F72861E8B300F1D01A /* PhoneNumeberAuth.swift */; };
 		849D9AE92861F4E2004CADAF /* KeyboardHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D9AE82861F4E2004CADAF /* KeyboardHide.swift */; };
 		849D9AED28620EAC004CADAF /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D9AEC28620EAC004CADAF /* MessagesViewController.swift */; };
-		84B9ADD228660B60008EE2C3 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9ADD128660B5F008EE2C3 /* ContactViewController.swift */; };
-		84B9ADD428660B70008EE2C3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9ADD328660B70008EE2C3 /* ProfileViewController.swift */; };
-		84B9ADD728660BB0008EE2C3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9ADD628660BB0008EE2C3 /* ChatViewController.swift */; };
 		84B9ADD928663032008EE2C3 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9ADD828663032008EE2C3 /* ForgotPasswordViewController.swift */; };
 		84B9ADDB28663B36008EE2C3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9ADDA28663B36008EE2C3 /* Validation.swift */; };
+		84C3E2502868A36700B30883 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E24F2868A36700B30883 /* ChatTableViewController.swift */; };
+		84C3E2522868A40C00B30883 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E2512868A40C00B30883 /* UsersViewController.swift */; };
+		84C3E25F2869527700B30883 /* userFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E25E2869527700B30883 /* userFirebase.swift */; };
+		84C3E2612869528B00B30883 /* userService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E2602869528B00B30883 /* userService.swift */; };
+		84C3E263286952A900B30883 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E262286952A900B30883 /* user.swift */; };
+		84C3E2652869555400B30883 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E2642869555400B30883 /* ChatViewController.swift */; };
+		84C3E2682869B6AF00B30883 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E2672869B6AF00B30883 /* MessageViewController.swift */; };
+		84C3E26A2869BAA000B30883 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3E2692869BAA000B30883 /* ProfileViewController.swift */; };
 		84C789932861DF7B00C442B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C789922861DF7B00C442B1 /* AppDelegate.swift */; };
 		84C789952861DF7B00C442B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C789942861DF7B00C442B1 /* SceneDelegate.swift */; };
 		84C7899A2861DF7B00C442B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C789982861DF7B00C442B1 /* Main.storyboard */; };
@@ -812,11 +817,16 @@
 		846917F72861E8B300F1D01A /* PhoneNumeberAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumeberAuth.swift; sourceTree = "<group>"; };
 		849D9AE82861F4E2004CADAF /* KeyboardHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHide.swift; sourceTree = "<group>"; };
 		849D9AEC28620EAC004CADAF /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		84B9ADD128660B5F008EE2C3 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		84B9ADD328660B70008EE2C3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		84B9ADD628660BB0008EE2C3 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		84B9ADD828663032008EE2C3 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		84B9ADDA28663B36008EE2C3 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		84C3E24F2868A36700B30883 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		84C3E2512868A40C00B30883 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		84C3E25E2869527700B30883 /* userFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userFirebase.swift; sourceTree = "<group>"; };
+		84C3E2602869528B00B30883 /* userService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userService.swift; sourceTree = "<group>"; };
+		84C3E262286952A900B30883 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		84C3E2642869555400B30883 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		84C3E2672869B6AF00B30883 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		84C3E2692869BAA000B30883 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		84C7898F2861DF7B00C442B1 /* AapnaConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AapnaConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C789922861DF7B00C442B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C789942861DF7B00C442B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -1676,11 +1686,23 @@
 		84B9ADD528660B7D008EE2C3 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				84B9ADD628660BB0008EE2C3 /* ChatViewController.swift */,
-				84B9ADD128660B5F008EE2C3 /* ContactViewController.swift */,
-				84B9ADD328660B70008EE2C3 /* ProfileViewController.swift */,
+				84C3E24F2868A36700B30883 /* ChatTableViewController.swift */,
+				84C3E2512868A40C00B30883 /* UsersViewController.swift */,
+				84C3E2642869555400B30883 /* ChatViewController.swift */,
+				84C3E2692869BAA000B30883 /* ProfileViewController.swift */,
+				84C3E2672869B6AF00B30883 /* MessageViewController.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		84C3E25B2869524200B30883 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				84C3E262286952A900B30883 /* user.swift */,
+				84C3E25E2869527700B30883 /* userFirebase.swift */,
+				84C3E2602869528B00B30883 /* userService.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		84C789862861DF7B00C442B1 = {
@@ -1704,6 +1726,7 @@
 		84C789912861DF7B00C442B1 /* AapnaConnect */ = {
 			isa = PBXGroup;
 			children = (
+				84C3E25B2869524200B30883 /* Users */,
 				849D9AE72861F4C4004CADAF /* Extensions */,
 				846917F42861E6D400F1D01A /* Authentications */,
 				846917F32861E6CA00F1D01A /* Controllers */,
@@ -4266,6 +4289,7 @@
 				84EF46E6286328AE00F2412D /* ShowAlert.swift in Sources */,
 				84EF46FA286328AE00F2412D /* EmptyMessage.swift in Sources */,
 				84EF45F6286328AD00F2412D /* CometChatMessageReaction.swift in Sources */,
+				84C3E26A2869BAA000B30883 /* ProfileViewController.swift in Sources */,
 				84EF4618286328AD00F2412D /* UserGroupMemberPresentable.swift in Sources */,
 				84EF45F8286328AD00F2412D /* ReactionCell.swift in Sources */,
 				84EF462F286328AE00F2412D /* CometChatWebView.swift in Sources */,
@@ -4278,6 +4302,7 @@
 				84EF4695286328AE00F2412D /* KeyboardTrackingView.swift in Sources */,
 				84EF46F6286328AE00F2412D /* DeviceDetection.swift in Sources */,
 				84EF46EC286328AE00F2412D /* DPImageView+Letters.swift in Sources */,
+				84C3E2682869B6AF00B30883 /* MessageViewController.swift in Sources */,
 				84EF4550286328AD00F2412D /* CometChatSenderImageMessageBubble.swift in Sources */,
 				84EF46CC286328AE00F2412D /* EdgeAnimation.swift in Sources */,
 				84EF4633286328AE00F2412D /* CometChatLiveReaction.swift in Sources */,
@@ -4310,7 +4335,6 @@
 				84EF462C286328AD00F2412D /* Feature + Extension 🔑.swift in Sources */,
 				84EF45F4286328AD00F2412D /* CometChatMessageReactions.swift in Sources */,
 				84EF456A286328AD00F2412D /* CometChatSenderStickerMessageBubble.swift in Sources */,
-				84B9ADD228660B60008EE2C3 /* ContactViewController.swift in Sources */,
 				84EF4627286328AD00F2412D /* CometChatMessageFilter.swift in Sources */,
 				84EF4636286328AE00F2412D /* CometChatSoundManager.swift in Sources */,
 				84EF4546286328AD00F2412D /* CometChatReceiverAudioMessageBubble.swift in Sources */,
@@ -4331,6 +4355,7 @@
 				84EF44EF286328AC00F2412D /* CometChatCallListItem.swift in Sources */,
 				84EF4699286328AE00F2412D /* UIEdgeInsets+Extensions.swift in Sources */,
 				84EF4635286328AE00F2412D /* URLSessionTask+Cancellable.swift in Sources */,
+				84C3E263286952A900B30883 /* user.swift in Sources */,
 				84EF46DB286328AE00F2412D /* SwiftMessages.Config+Extensions.swift in Sources */,
 				84EF4637286328AE00F2412D /* CometChatStatusIndicator.swift in Sources */,
 				84EF453A286328AD00F2412D /* CometChatUI.swift in Sources */,
@@ -4346,6 +4371,7 @@
 				84EF45F7286328AD00F2412D /* CometChatMessageReactor.swift in Sources */,
 				84EF453D286328AD00F2412D /* CometChatReceiverLinkPreviewBubble.swift in Sources */,
 				84EF4622286328AD00F2412D /* DimmedView.swift in Sources */,
+				84C3E2522868A40C00B30883 /* UsersViewController.swift in Sources */,
 				84EF469C286328AE00F2412D /* PassthroughView.swift in Sources */,
 				84EF4557286328AD00F2412D /* CometChatReceiverTextMessageBubble.swift in Sources */,
 				84EF4621286328AD00F2412D /* PanModalPresentationAnimator.swift in Sources */,
@@ -4362,6 +4388,7 @@
 				84EF4665286328AE00F2412D /* CometChatUserList.swift in Sources */,
 				84EF46FB286328AE00F2412D /* Protocol.swift in Sources */,
 				84EF46DD286328AE00F2412D /* BaseView.swift in Sources */,
+				84C3E25F2869527700B30883 /* userFirebase.swift in Sources */,
 				84EF465A286328AE00F2412D /* CometChatAddAdministrators.swift in Sources */,
 				84EF47F628634B3500F2412D /* LoginViewController.swift in Sources */,
 				84EF463A286328AE00F2412D /* LanguageSelectionView.swift in Sources */,
@@ -4369,6 +4396,8 @@
 				84EF451D286328AD00F2412D /* CometChatCreateMeetingView.swift in Sources */,
 				84EF469B286328AE00F2412D /* Error.swift in Sources */,
 				84EF4661286328AE00F2412D /* CometChatCreateGroup.swift in Sources */,
+				84C3E2612869528B00B30883 /* userService.swift in Sources */,
+				84C3E2652869555400B30883 /* ChatViewController.swift in Sources */,
 				84EF46EA286328AE00F2412D /* ViewTransformation.swift in Sources */,
 				84EF46E1286328AE00F2412D /* HyperlinkBuilder.swift in Sources */,
 				84EF46EF286328AE00F2412D /* AudioVisualizationView.swift in Sources */,
@@ -4411,6 +4440,7 @@
 				84EF462E286328AE00F2412D /* CometChatAvatar.swift in Sources */,
 				84EF4642286328AE00F2412D /* CometChatGroupListItem.swift in Sources */,
 				84EF4615286328AD00F2412D /* PanModalPresentable+Defaults.swift in Sources */,
+				84C3E2502868A36700B30883 /* ChatTableViewController.swift in Sources */,
 				84EF462D286328AD00F2412D /* FeatureRestriction.swift in Sources */,
 				84EF4623286328AD00F2412D /* PanModalPresenter.swift in Sources */,
 				84EF4616286328AD00F2412D /* ActionsCell.swift in Sources */,
@@ -4435,10 +4465,8 @@
 				84EF4600286328AD00F2412D /* CometChatCreatePollOptions.swift in Sources */,
 				84EF45FC286328AD00F2412D /* CometChatExtension.swift in Sources */,
 				84EF451A286328AD00F2412D /* CometChatProgressIndicatorItem.swift in Sources */,
-				84B9ADD428660B70008EE2C3 /* ProfileViewController.swift in Sources */,
 				84EF4522286328AD00F2412D /* CometChatNewCallList.swift in Sources */,
 				84EF46E4286328AE00F2412D /* CometChatSnackBar.swift in Sources */,
-				84B9ADD728660BB0008EE2C3 /* ChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

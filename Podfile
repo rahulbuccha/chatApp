@@ -8,6 +8,7 @@ target 'AapnaConnect' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Analytics'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'MessageKit'
   

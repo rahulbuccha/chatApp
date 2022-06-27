@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -30,9 +31,9 @@ class LoginViewController: UIViewController {
     //MARK: Login Button Tapped and Function
     @IBAction func loginTapped(_ sender: Any) {
         didTapLoginButton()
-        
+        //checkCurrentUser()
     }
-    
+
     @objc func didTapLoginButton() {
         let loginManager = FirebaseAuthManager()
         guard let email = emailOutlet.text, let password = passwordOutlet.text else { return }
@@ -48,5 +49,17 @@ class LoginViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alertController, animated: true)
         }
+    }
+    
+//    func checkCurrentUser(){
+//        if (Auth.auth().currentUser == nil){
+//            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChatViewController"){
+//                self.navigationController?.present(vc, animated: true, completion: nil)
+//            }
+//        }
+//    }
+    
+    func logout(){
+        
     }
 }
