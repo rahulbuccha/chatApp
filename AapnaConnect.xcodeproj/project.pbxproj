@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		8401BE8C2865D1230024F2D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8401BE8B2865D1230024F2D6 /* GoogleService-Info.plist */; };
 		8401BE902865D27E0024F2D6 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401BE8F2865D27E0024F2D6 /* FirebaseAuthManager.swift */; };
+		8405045D286B1689002FE24D /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405045C286B1689002FE24D /* EditProfileTableViewCell.swift */; };
 		843B9E9E286AA6F200EE2CAB /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9E9D286AA6F200EE2CAB /* CustomCellTableViewCell.swift */; };
 		843B9EA0286AAE3000EE2CAB /* ListOfUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9E9F286AAE3000EE2CAB /* ListOfUserViewController.swift */; };
 		843B9EA2286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */; };
 		843B9EA4286AD78600EE2CAB /* FindFreindsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9EA3286AD78600EE2CAB /* FindFreindsViewController.swift */; };
+		843B9EA6286B0CD700EE2CAB /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9EA5286B0CD700EE2CAB /* EditProfileViewController.swift */; };
 		846917F62861E6F700F1D01A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846917F52861E6F700F1D01A /* RegisterViewController.swift */; };
 		846917F82861E8B300F1D01A /* PhoneNumeberAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846917F72861E8B300F1D01A /* PhoneNumeberAuth.swift */; };
 		849D9AE92861F4E2004CADAF /* KeyboardHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849D9AE82861F4E2004CADAF /* KeyboardHide.swift */; };
@@ -39,10 +41,12 @@
 		71F26CF0EC894D8C87CECF2F /* Pods-AapnaConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AapnaConnect.debug.xcconfig"; path = "Target Support Files/Pods-AapnaConnect/Pods-AapnaConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		8401BE8B2865D1230024F2D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8401BE8F2865D27E0024F2D6 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		8405045C286B1689002FE24D /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
 		843B9E9D286AA6F200EE2CAB /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		843B9E9F286AAE3000EE2CAB /* ListOfUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUserViewController.swift; sourceTree = "<group>"; };
 		843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendCustomTableViewCell.swift; sourceTree = "<group>"; };
 		843B9EA3286AD78600EE2CAB /* FindFreindsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFreindsViewController.swift; sourceTree = "<group>"; };
+		843B9EA5286B0CD700EE2CAB /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		846917F52861E6F700F1D01A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		846917F72861E8B300F1D01A /* PhoneNumeberAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumeberAuth.swift; sourceTree = "<group>"; };
 		849D9AE82861F4E2004CADAF /* KeyboardHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHide.swift; sourceTree = "<group>"; };
@@ -127,9 +131,11 @@
 				84C3E2642869555400B30883 /* ChatViewController.swift */,
 				843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */,
 				843B9EA3286AD78600EE2CAB /* FindFreindsViewController.swift */,
-				843B9E9F286AAE3000EE2CAB /* ListOfUserViewController.swift */,
+				8405045C286B1689002FE24D /* EditProfileTableViewCell.swift */,
+				843B9EA5286B0CD700EE2CAB /* EditProfileViewController.swift */,
 				84C3E2692869BAA000B30883 /* ProfileViewController.swift */,
 				84C3E2672869B6AF00B30883 /* MessageViewController.swift */,
+				843B9E9F286AAE3000EE2CAB /* ListOfUserViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B9EA6286B0CD700EE2CAB /* EditProfileViewController.swift in Sources */,
 				849D9AE92861F4E2004CADAF /* KeyboardHide.swift in Sources */,
 				846917F62861E6F700F1D01A /* RegisterViewController.swift in Sources */,
 				846917F82861E8B300F1D01A /* PhoneNumeberAuth.swift in Sources */,
@@ -329,6 +336,7 @@
 				84C789932861DF7B00C442B1 /* AppDelegate.swift in Sources */,
 				84C3E25F2869527700B30883 /* userFirebase.swift in Sources */,
 				84EF47F628634B3500F2412D /* LoginViewController.swift in Sources */,
+				8405045D286B1689002FE24D /* EditProfileTableViewCell.swift in Sources */,
 				84C3E2612869528B00B30883 /* userService.swift in Sources */,
 				84C3E2652869555400B30883 /* ChatViewController.swift in Sources */,
 				84B9ADD928663032008EE2C3 /* ForgotPasswordViewController.swift in Sources */,

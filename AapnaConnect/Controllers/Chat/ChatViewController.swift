@@ -21,7 +21,7 @@ class ChatViewController: UIViewController{
         friendView.separatorStyle = .none
         
     }
-
+    
 }
 
 extension ChatViewController : UITableViewDelegate, UITableViewDataSource{
@@ -46,3 +46,4 @@ extension ChatViewController : UITableViewDelegate, UITableViewDataSource{
     
     
 }
+
