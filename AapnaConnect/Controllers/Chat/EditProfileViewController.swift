@@ -17,7 +17,7 @@ class EditProfileViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-
+        tableView.allowsSelection = false
     }
     
 }
@@ -36,12 +36,12 @@ extension EditProfileViewController : UITableViewDelegate, UITableViewDataSource
         
         let friends = friend[indexPath.row]
         cell.editImageView.image = UIImage(named: friends)
-        cell.userNameLbl.text = friends
-        cell.userTxtField.text = friends
-        cell.emailLbl.text = friends
-        cell.emailTxtField.text = friends
-        cell.phoneLbl.text = friends
-        cell.phoneTxtField.text = friends
+//        cell.userNameLbl.text = friends
+//        cell.userTxtField.text = friends
+//        cell.emailLbl.text = friends
+//        cell.emailTxtField.text = friends
+//        cell.phoneLbl.text = friends
+//        cell.phoneTxtField.text = friends
         
         return cell
     }

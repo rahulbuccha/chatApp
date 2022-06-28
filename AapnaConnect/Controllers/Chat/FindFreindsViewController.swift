@@ -21,7 +21,8 @@ class FindFreindsViewController: UIViewController {
         filterData = findfriends
         findFriendView.delegate = self
         findFriendView.dataSource = self
-        
+        findFriendView.allowsSelection = false
+        findFriendView.separatorStyle = .none
         searchBar.delegate = self
     }
 
