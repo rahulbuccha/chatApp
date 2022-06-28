@@ -7,13 +7,11 @@ import UIKit
 import CoreData
 import FirebaseCore
 
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let appId = "212556a43a50e68c"
-    let region = "us"
+   
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()

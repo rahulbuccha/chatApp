@@ -9,16 +9,16 @@
 //
 //
 //class MessageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-//    
+//
 //    private let tableView : UITableView = {
 //        let table = UITableView()
 //        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-//        
+//
 //        return table
 //    }()
 //
 //    private let items : [String]
-//    
+//
 //    //init
 //    init(items : [String]){
 //        self.items = items
@@ -40,10 +40,10 @@
 //    }
 //    override func viewDidLayoutSubviews() {
 //        super.viewDidLayoutSubviews()
-//        
+//
 //        tableView.frame = view.bounds
 //    }
-//   
+//
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return items.count
 //    }
@@ -54,8 +54,8 @@
 //    }
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        tableView.deselectRow(at: indexPath, animated: true)
-//        
+//
 //    }
-//    
-//    
+//
+//
 //}

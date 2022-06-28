@@ -10,9 +10,5 @@ target 'AapnaConnect' do
   pod 'Firebase/Database'
   pod 'Firebase/Analytics'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
-  pod 'MessageKit'
   
-  pod 'CometChatPro', '3.0.900'
-  pod 'CometChatCalls', '2.1.1'
-
 end
