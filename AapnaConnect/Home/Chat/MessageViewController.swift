@@ -33,8 +33,28 @@ class MessageViewController: UIViewController {
         
         //For removing back button of tabBarController from viewController
         self.tabBarController?.navigationItem.hidesBackButton = true
+        
+        //
+        
+        
+//
+//        NotificationCenter.default.addObserver(self, selector: #selector(MessageViewController.keyboardWillShow), name: NSNotification.Name.UIResponder.keyboardWillShowNotification, object: nil); NotificationCenter.default.addObserver(self, selector: #selector(MessageViewController.keyboardWillHide), name: NSNotification.Name.UIResponder.keyboardWillHideNotification, object: nil)
        
     }
+//
+//    @objc func keyboardWillShow(notification: NSNotification) {
+//        guard let userInfo = notification.userInfo else {return}
+//        guard let keyboardSize = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {return}
+//        var keyboardFrame = keyboardSize.cgRectValue
+//        if self.view.frame.origin.y == 0{
+//            self.view.frame.origin.y -= keyboardFrame.height
+//        }
+//    }
+//    @objc func keyboardWillHide(notification: NSNotification) {
+//        if self.view.frame.origin.y != 0{
+//            self.view.frame.origin.y += keyboardFrame.height
+//        }
+//    }
     
     //OnClick Tap function to send data of textField to variable then to the array
     @IBAction func sendTapped(_ sender: UIButton){
@@ -45,6 +65,14 @@ class MessageViewController: UIViewController {
         messageView.reloadData()
         txtField.text = ""
     }
+    
+    //MARK: For moving textfield with keyboard
+    
+    func textFieldDidBeginEditing(txtField: UITextField) {
+           
+    }
+    
+    
 }
 
 //MARK: Creating extension viewControllers for table view
