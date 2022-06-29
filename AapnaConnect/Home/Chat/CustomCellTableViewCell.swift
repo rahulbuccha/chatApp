@@ -9,6 +9,7 @@ import UIKit
 
 class CustomCellTableViewCell: UITableViewCell {
 
+    // All the Outlets from the table view cell
     @IBOutlet weak var friendView: UIView!
     @IBOutlet weak var avatarImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!

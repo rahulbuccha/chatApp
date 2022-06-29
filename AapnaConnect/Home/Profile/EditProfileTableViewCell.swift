@@ -9,6 +9,7 @@ import UIKit
 
 class EditProfileTableViewCell: UITableViewCell {
 
+    //Outlets
     @IBOutlet weak var editImageView: UIImageView!
     @IBOutlet weak var editView: UIView!
     @IBOutlet weak var userNameLbl: UILabel!
@@ -23,7 +24,7 @@ class EditProfileTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // to make imageView round but it didn't work
         editImageView.layer.masksToBounds = true
         editImageView.layer.cornerRadius = editImageView.frame.height / 2
     }
