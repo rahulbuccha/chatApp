@@ -17,7 +17,7 @@ class ChatViewController: UIViewController{
     
         friendView.delegate = self
         friendView.dataSource =  self
-        friendView.allowsSelection = false
+        //friendView.allowsSelection = false
         friendView.separatorStyle = .none
         
     }
@@ -46,16 +46,16 @@ extension ChatViewController : UITableViewDelegate, UITableViewDataSource{
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell =  friends[indexPath.row]
-        performSegue(withIdentifier: "passData", sender: cell)
+        performSegue(withIdentifier: "message", sender: cell)
         
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! MessageViewController
-        let cell = sender as! String
-        vc.term = cell
+        let selectedTerm = sender as! String
+        vc.term = selectedTerm
+
     }
-    
-    
     
 }
 

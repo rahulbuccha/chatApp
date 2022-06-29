@@ -21,7 +21,7 @@ class FindFreindsViewController: UIViewController {
         filterData = findfriends
         findFriendView.delegate = self
         findFriendView.dataSource = self
-        findFriendView.allowsSelection = false
+        //findFriendView.allowsSelection = false
         findFriendView.separatorStyle = .none
         searchBar.delegate = self
     }
@@ -47,6 +47,19 @@ extension FindFreindsViewController : UITableViewDelegate, UITableViewDataSource
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       let cell =  findfriends[indexPath.row]
+       performSegue(withIdentifier: "findFriend", sender: cell)
+       
+   }
+   
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       let vc = segue.destination as! FindFriendMessageViewController
+       let selectedTerm = sender as! String
+       vc.term = selectedTerm
+
+   }
     
 }
 

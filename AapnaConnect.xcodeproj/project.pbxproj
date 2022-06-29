@@ -34,6 +34,7 @@
 		84C789A22861DF7D00C442B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C789A02861DF7D00C442B1 /* LaunchScreen.storyboard */; };
 		84EF47F628634B3500F2412D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF47F528634B3500F2412D /* LoginViewController.swift */; };
 		84EF47F8286351F300F2412D /* BUttonShadows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF47F7286351F300F2412D /* BUttonShadows.swift */; };
+		84FD3DFF286C25490002A327 /* FindFriendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD3DFE286C25490002A327 /* FindFriendMessageViewController.swift */; };
 		C6D4D4CF2ADCB1EFC7A7A764 /* Pods_AapnaConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64D984730920ECBDA80BCB8 /* Pods_AapnaConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		84C789A32861DF7D00C442B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EF47F528634B3500F2412D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84EF47F7286351F300F2412D /* BUttonShadows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUttonShadows.swift; sourceTree = "<group>"; };
+		84FD3DFE286C25490002A327 /* FindFriendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendMessageViewController.swift; sourceTree = "<group>"; };
 		B64D984730920ECBDA80BCB8 /* Pods_AapnaConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AapnaConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD633C9B768F640D8D1F4971 /* Pods-AapnaConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AapnaConnect.release.xcconfig"; path = "Target Support Files/Pods-AapnaConnect/Pods-AapnaConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +102,6 @@
 				84EF47F528634B3500F2412D /* LoginViewController.swift */,
 				84B9ADD828663032008EE2C3 /* ForgotPasswordViewController.swift */,
 				849D9AEC28620EAC004CADAF /* MessagesViewController.swift */,
-				84B9ADD528660B7D008EE2C3 /* Chat */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,20 +125,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		84B9ADD528660B7D008EE2C3 /* Chat */ = {
+		84B9ADD528660B7D008EE2C3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				843B9E9D286AA6F200EE2CAB /* CustomCellTableViewCell.swift */,
-				84C3E2642869555400B30883 /* ChatViewController.swift */,
-				843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */,
-				843B9EA3286AD78600EE2CAB /* FindFreindsViewController.swift */,
-				8405045C286B1689002FE24D /* EditProfileTableViewCell.swift */,
-				843B9EA5286B0CD700EE2CAB /* EditProfileViewController.swift */,
-				84C3E2692869BAA000B30883 /* ProfileViewController.swift */,
-				84C3E2672869B6AF00B30883 /* MessageViewController.swift */,
 				843B9E9F286AAE3000EE2CAB /* ListOfUserViewController.swift */,
+				84FD3E00286C31DD0002A327 /* Chat */,
+				84FD3E02286C32410002A327 /* Find */,
+				84FD3E01286C322A0002A327 /* Profile */,
 			);
-			path = Chat;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		84C3E25B2869524200B30883 /* Users */ = {
@@ -175,6 +171,7 @@
 				849D9AE72861F4C4004CADAF /* Extensions */,
 				846917F42861E6D400F1D01A /* Authentications */,
 				846917F32861E6CA00F1D01A /* Controllers */,
+				84B9ADD528660B7D008EE2C3 /* Home */,
 				84C789922861DF7B00C442B1 /* AppDelegate.swift */,
 				84C789942861DF7B00C442B1 /* SceneDelegate.swift */,
 				84C789982861DF7B00C442B1 /* Main.storyboard */,
@@ -184,6 +181,36 @@
 				8401BE8B2865D1230024F2D6 /* GoogleService-Info.plist */,
 			);
 			path = AapnaConnect;
+			sourceTree = "<group>";
+		};
+		84FD3E00286C31DD0002A327 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				843B9E9D286AA6F200EE2CAB /* CustomCellTableViewCell.swift */,
+				84C3E2642869555400B30883 /* ChatViewController.swift */,
+				84C3E2672869B6AF00B30883 /* MessageViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		84FD3E01286C322A0002A327 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8405045C286B1689002FE24D /* EditProfileTableViewCell.swift */,
+				843B9EA5286B0CD700EE2CAB /* EditProfileViewController.swift */,
+				84C3E2692869BAA000B30883 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		84FD3E02286C32410002A327 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */,
+				843B9EA3286AD78600EE2CAB /* FindFreindsViewController.swift */,
+				84FD3DFE286C25490002A327 /* FindFriendMessageViewController.swift */,
+			);
+			path = Find;
 			sourceTree = "<group>";
 		};
 		BF4A5972487FAB6CBBE9C71A /* Frameworks */ = {
@@ -344,6 +371,7 @@
 				849D9AED28620EAC004CADAF /* MessagesViewController.swift in Sources */,
 				84EF47F8286351F300F2412D /* BUttonShadows.swift in Sources */,
 				8401BE902865D27E0024F2D6 /* FirebaseAuthManager.swift in Sources */,
+				84FD3DFF286C25490002A327 /* FindFriendMessageViewController.swift in Sources */,
 				843B9EA4286AD78600EE2CAB /* FindFreindsViewController.swift in Sources */,
 				84C789952861DF7B00C442B1 /* SceneDelegate.swift in Sources */,
 			);
