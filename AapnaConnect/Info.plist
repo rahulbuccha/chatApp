@@ -4,6 +4,10 @@
 <dict>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>Need access of your &quot;gallery&quot; to update profile.  </string>
+	<key>NSCameraUsageDescription</key>
+	<string>Need access of your &quot;camera&quot; to update profile</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Need access of your &quot;photo library&quot; to update profile.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseAuth
+//import Firebase
+//import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
@@ -35,7 +35,7 @@ class RegisterViewController: UIViewController {
     
     //MARK: Register Button Tapped and Function
     @IBAction func registerTapped(_ sender: UIButton){
-       didTapSignUpButton()
+      // didTapSignUpButton()
     }
     @objc func didTapSignUpButton() {
         let signUpManager = FirebaseAuthManager()

@@ -7,50 +7,68 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
+class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        
+    @IBOutlet weak var profileImageView: UIImageView!
     
-    //Creating static Varible
-    let friend = ["hacker"]
-    
-    @IBOutlet weak var tableView: UITableView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        //passing delegates
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.allowsSelection = false
+        
+        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
+        profileImageView.layer.masksToBounds = true
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        
+        profileImageView.addGestureRecognizer(tapGR)
+        profileImageView.isUserInteractionEnabled = true
+        
+    }
+    
+    @objc func imageTapped(sender: UITapGestureRecognizer) {
+                        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
+        
+        let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Open Camera", style: .default, handler: {
+            (action : UIAlertAction) in
+            imagePickerController.sourceType = .camera
+            self.present(imagePickerController, animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Open Gallery", style: .default, handler: {
+            (action : UIAlertAction) in
+            imagePickerController.sourceType = .photoLibrary
+            self.present(imagePickerController, animated: true, completion: nil)
+        }))
+
+    
+       
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+
+//                       self.present(alert, didShow: UIAlertAction, animated: true)
+        self.present(alert, animated: true, completion: nil)
+
+                    
+
+    }
+    
+//     Picking image func
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[.editedImage] as? UIImage{
+            profileImageView.image = selectedImage
+        }
+        
+        picker.dismiss(animated: true, completion : nil)
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
     
 }
 
-//MARK: Creating extension viewControllers for table view
-extension EditProfileViewController : UITableViewDelegate, UITableViewDataSource{
-    
-    // for Creating height for the tableView as it's custom TableViewCell
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 700
-    }
-    
-    //For counting no. of rows to be printed
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        friend.count
-    }
-    
-    //creating what to be printed on tableViewCell
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "edit") as! EditProfileTableViewCell
-        
-        let friends = friend[indexPath.row]
-        cell.editImageView.image = UIImage(named: friends)
-//        cell.userNameLbl.text = friends
-//        cell.userTxtField.text = friends
-//        cell.emailLbl.text = friends
-//        cell.emailTxtField.text = friends
-//        cell.phoneLbl.text = friends
-//        cell.phoneTxtField.text = friends
-        
-        return cell
-    }
-   
-}

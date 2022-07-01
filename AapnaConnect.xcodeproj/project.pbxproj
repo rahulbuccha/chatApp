@@ -10,6 +10,7 @@
 		8401BE8C2865D1230024F2D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8401BE8B2865D1230024F2D6 /* GoogleService-Info.plist */; };
 		8401BE902865D27E0024F2D6 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8401BE8F2865D27E0024F2D6 /* FirebaseAuthManager.swift */; };
 		8405045D286B1689002FE24D /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8405045C286B1689002FE24D /* EditProfileTableViewCell.swift */; };
+		841F8180286D555E00875A22 /* FindMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F817F286D555D00875A22 /* FindMessageTableViewCell.swift */; };
 		843B9E9E286AA6F200EE2CAB /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9E9D286AA6F200EE2CAB /* CustomCellTableViewCell.swift */; };
 		843B9EA0286AAE3000EE2CAB /* ListOfUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9E9F286AAE3000EE2CAB /* ListOfUserViewController.swift */; };
 		843B9EA2286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */; };
@@ -44,6 +45,7 @@
 		8401BE8B2865D1230024F2D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8401BE8F2865D27E0024F2D6 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		8405045C286B1689002FE24D /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
+		841F817F286D555D00875A22 /* FindMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMessageTableViewCell.swift; sourceTree = "<group>"; };
 		843B9E9D286AA6F200EE2CAB /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 		843B9E9F286AAE3000EE2CAB /* ListOfUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfUserViewController.swift; sourceTree = "<group>"; };
 		843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendCustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				843B9EA1286AD0AA00EE2CAB /* FindFriendCustomTableViewCell.swift */,
 				843B9EA3286AD78600EE2CAB /* FindFreindsViewController.swift */,
 				84FD3DFE286C25490002A327 /* FindFriendMessageViewController.swift */,
+				841F817F286D555D00875A22 /* FindMessageTableViewCell.swift */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				84B9ADD928663032008EE2C3 /* ForgotPasswordViewController.swift in Sources */,
 				843B9E9E286AA6F200EE2CAB /* CustomCellTableViewCell.swift in Sources */,
 				849D9AED28620EAC004CADAF /* MessagesViewController.swift in Sources */,
+				841F8180286D555E00875A22 /* FindMessageTableViewCell.swift in Sources */,
 				84EF47F8286351F300F2412D /* BUttonShadows.swift in Sources */,
 				8401BE902865D27E0024F2D6 /* FirebaseAuthManager.swift in Sources */,
 				84FD3DFF286C25490002A327 /* FindFriendMessageViewController.swift in Sources */,

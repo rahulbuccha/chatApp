@@ -9,10 +9,13 @@ import UIKit
 
 class MessagesTableViewCell: UITableViewCell {
     @IBOutlet weak var txtLbl: UILabel!
+    @IBOutlet weak var uiViewBubble: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
       
+        //uiViewBubble.backgroundColor = .green
+        uiViewBubble.layer.cornerRadius = 10
         
     }
 

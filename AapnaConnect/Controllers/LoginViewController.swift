@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+//import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
     
     //MARK: Login Button Tapped and Function
     @IBAction func loginTapped(_ sender: Any) {
-        didTapLoginButton()
+        //didTapLoginButton()
         //checkCurrentUser()
     }
 
