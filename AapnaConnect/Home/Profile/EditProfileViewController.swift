@@ -34,8 +34,14 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         
         alert.addAction(UIAlertAction(title: "Open Camera", style: .default, handler: {
             (action : UIAlertAction) in
-            imagePickerController.sourceType = .camera
-            self.present(imagePickerController, animated: true, completion: nil)
+            if UIImagePickerController.isSourceTypeAvailable(.camera){
+                imagePickerController.sourceType = .camera
+                self.present(imagePickerController, animated: true, completion: nil)
+            }
+            else{
+                print("Camera Not Available")
+            }
+            
         }))
         
         alert.addAction(UIAlertAction(title: "Open Gallery", style: .default, handler: {
